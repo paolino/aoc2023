@@ -1,16 +1,12 @@
-{-# LANGUAGE PatternSynonyms #-}
-{-# LANGUAGE ViewPatterns #-}
-{-# LANGUAGE ScopedTypeVariables #-}
-
 module Main where
 
+import Aoc1 qualified
+import Aoc2 qualified
 import System.Environment (getArgs)
-import qualified Aoc1
-import qualified Aoc2
 
 main :: IO ()
 main = do
-    (x:_ ) <- getArgs
+    (x : _) <- getArgs
     case read x of
         (1 :: Int) -> Aoc1.main >>= print
         2 -> Aoc2.main >>= print
