@@ -39,7 +39,7 @@ executable aoc2023
         , ScopedTypeVariables
         , ImportQualifiedPost
     build-depends:
-        base ^>=4.17.2.0
+        base
         , containers
         , attoparsec
         , bytestring
