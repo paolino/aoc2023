@@ -33,6 +33,7 @@ executable aoc2023
         Aoc1
         Aoc2
         Aoc3
+        Aoc4
     -- LANGUAGE extensions used by modules in this package.
     default-extensions:
         OverloadedStrings
@@ -45,5 +46,6 @@ executable aoc2023
         , attoparsec
         , bytestring
         , foldl
+        , pretty-simple
     hs-source-dirs:   app
     default-language: Haskell2010
