@@ -5,6 +5,7 @@ import Aoc2 qualified
 import Aoc3 qualified
 import Aoc4 qualified
 import Aoc5 qualified
+import Aoc6 qualified
 import System.Environment (getArgs)
 
 main :: IO ()
@@ -16,4 +17,5 @@ main = do
         3 -> Aoc3.main >>= print
         4 -> Aoc4.main >>= print
         5 -> Aoc5.main >>= print
+        6 -> Aoc6.main >>= print
         _ -> error "unknown day"
