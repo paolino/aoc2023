@@ -36,6 +36,7 @@ executable aoc2023
         Aoc4
         Aoc5
         Aoc6
+        Aoc7
     -- LANGUAGE extensions used by modules in this package.
     default-extensions:
         OverloadedStrings
