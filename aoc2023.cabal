@@ -22,33 +22,37 @@ maintainer:         paolo.veronelli@gmail.com
 extra-source-files: CHANGELOG.md
 
 common common-options
-    ghc-options: -Wall
+  ghc-options: -Wall
 
 executable aoc2023
-    import: common-options
-    main-is:          Main.hs
+  import:             common-options
+  main-is:            Main.hs
 
-    -- Modules included in this executable, other than Main.
-    other-modules:
-        Aoc1
-        Aoc2
-        Aoc3
-        Aoc4
-        Aoc5
-        Aoc6
-        Aoc7
-    -- LANGUAGE extensions used by modules in this package.
-    default-extensions:
-        OverloadedStrings
-        , TypeApplications
-        , ScopedTypeVariables
-        , ImportQualifiedPost
-    build-depends:
-        base
-        , containers
-        , attoparsec
-        , bytestring
-        , foldl
-        , pretty-simple
-    hs-source-dirs:   app
-    default-language: Haskell2010
+  -- Modules included in this executable, other than Main.
+  other-modules:
+    Aoc1
+    Aoc2
+    Aoc3
+    Aoc4
+    Aoc5
+    Aoc6
+    Aoc7
+    Aoc9
+
+  -- LANGUAGE extensions used by modules in this package.
+  default-extensions:
+    ImportQualifiedPost
+    OverloadedStrings
+    ScopedTypeVariables
+    TypeApplications
+
+  build-depends:
+    , attoparsec
+    , base
+    , bytestring
+    , containers
+    , foldl
+    , pretty-simple
+
+  hs-source-dirs:     app
+  default-language:   Haskell2010
