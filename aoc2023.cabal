@@ -39,6 +39,7 @@ executable aoc2023
     Aoc7
     Aoc9
     Aoc10
+    Aoc11
 
   -- LANGUAGE extensions used by modules in this package.
   default-extensions:
@@ -54,6 +55,7 @@ executable aoc2023
     , containers
     , foldl
     , pretty-simple
+    , mtl
 
   hs-source-dirs:     app
   default-language:   Haskell2010
