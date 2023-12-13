@@ -62,10 +62,10 @@ type Number = Int
 
 promote1 :: Square Char -> WithContext Bool
 promote1 ((tl, t, tr), (l, Digit x, r), (bl, b, br)) =
-    Just (x, any isOk [tl, t, tr, l, r, bl, b, br])
+    Just (x, any isSymbol [tl, t, tr, l, r, bl, b, br])
   where
-    isOk :: Char -> Bool
-    isOk c = not $ isDigit c || c == '.'
+    isSymbol :: Char -> Bool
+    isSymbol c = not $ isDigit c || c == '.'
 promote1 (_, (_, _, _), _) = Nothing
 
 collect1 :: [WithContext Bool] -> [Number]
