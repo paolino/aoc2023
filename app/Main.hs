@@ -11,6 +11,7 @@ import Aoc9 qualified
 import Aoc10 qualified
 import Aoc11 qualified
 import Aoc12 qualified
+import Aoc13 qualified
 
 import System.Environment (getArgs)
 
@@ -29,4 +30,5 @@ main = do
         10 -> Aoc10.main >>= print
         11 -> Aoc11.main >>= print
         12 -> Aoc12.main >>= print
+        13 -> Aoc13.main >>= print
         _ -> error "unknown day"

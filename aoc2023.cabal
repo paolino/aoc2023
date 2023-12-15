@@ -41,6 +41,7 @@ executable aoc2023
     Aoc10
     Aoc11
     Aoc12
+    Aoc13
 
   -- LANGUAGE extensions used by modules in this package.
   default-extensions:
