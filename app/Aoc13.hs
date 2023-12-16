@@ -52,8 +52,7 @@ isGood :: (Eq b) => ([b], [b]) -> Bool
 isGood (xs, ys) = and $ zipWith (==) xs ys
 
 anySimmetry
-    :: (Eq a)
-    => (([[a]], [[a]]) -> Bool)
+    :: (([[a]], [[a]]) -> Bool)
     -> [[a]]
     -> Maybe (Either ([[a]], [[a]]) ([[a]], [[a]]))
 anySimmetry good xs = f Left xs <|> f Right (transpose xs)

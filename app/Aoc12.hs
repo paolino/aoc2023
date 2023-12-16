@@ -1,6 +1,5 @@
 {-# LANGUAGE BlockArguments #-}
 {-# LANGUAGE RecordWildCards #-}
-{-# LANGUAGE ViewPatterns #-}
 {-# OPTIONS_GHC -Wno-incomplete-uni-patterns #-}
 {-# OPTIONS_GHC -Wno-unused-do-bind #-}
 

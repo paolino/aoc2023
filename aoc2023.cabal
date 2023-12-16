@@ -22,7 +22,13 @@ maintainer:         paolo.veronelli@gmail.com
 extra-source-files: CHANGELOG.md
 
 common common-options
-  ghc-options: -Wall
+  ghc-options:
+    -Wall
+    -Wincomplete-uni-patterns
+    -Wincomplete-record-updates
+    -Wmissing-exported-signatures
+    -Wredundant-constraints
+    -Wpartial-fields
 
 executable aoc2023
   import:             common-options
